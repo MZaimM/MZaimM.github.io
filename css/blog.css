@@ -119,7 +119,7 @@ section{
   text-align: center;
   animation-name: motion-body;
   animation-duration: 2s;
-  margin: 0 40px;
+  margin: 0 20px;
 }
 @keyframes motion-body{
   0%{
@@ -159,5 +159,8 @@ a:hover,a.active{
 }
 #check:checked ~ ul{
   left: 0;
+}
+.button{
+  padding: 10px 20px;
 }
 }
