@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cara-mempartisi-windows10.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="ul">
+            <li class="li">
+                <a href="index.html" >Home</a>
+            </li>
+            <li class="li">
+                <a href="about.html">About</a>
+            </li>
+            <li class="li">
+                <a href="portofolio.html">Portfolio</a>
+            </li>
+            <li class="li">
+                <a href="blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="material-icons">expand_less</i>
+    </button>
+    <section>
+        <main>
+            <article>
+                <header>
+                    <h2 class="fw-bold ">Cara Mempartisi <span>Windows 10</span></h2>
+                </header>
+                <div class="featured-media">
+                    <img src="img/windows10.png" alt="">
+                </div>
+                <div class="content mt-5">
+                    <h3><strong>A. Tabel Partisi di Windows</strong></h3>
+                    <p>Operation System Windows ini memiliki dua jenis partisi tabel yang masing-masing jenisnya masih dibagi lagi. Partisi tersebut ialah File Allocation Table (FAT) dan New Technology File System (NTFS).</p>
+                    <p><strong>1. File Allocation Table (FAT)</strong></p>
+                    <p>Partisi tabel jenis FAT ini merupakan partisi file yang sangat klasik dikarenakan partisi ini digunakan pada operation system berbasis DOS dan terinspirasi pada system file UNIX. System file FAT ini menggunakan table structure sebagai alokasi berkas operasinya. Berikut beberapa versi dari partition table FAT yang digunakan :
+                        <ol type="a">
+                            <li><strong>FAT12</strong></li>
+                            <p>FAT12 ini telah digunakan sejak operation sytem MS-DOS. FAT12 ini hanya menggunakan berkas alokasi sampai 12 bit saja. System file ini dapat ditampung oleh FAT12 ini maksimum 212 berkas alokasi (4096 buah). Sehingga FAT12 ini banyak digunakan pada media penyimpanan disket (Floppy Disk).</p>
+                            <li><strong>FAT16</strong></li>
+                            <p>FAT16 ini telah digunakan sejak operation sytem MS-DOS (1981). FAT16 ini menggunakan berkas alokasi sampai 16 bit saja. System file ini dapat ditampung oleh FAT16 ini maksimum 216 berkas alokasi (65536 buah). Sehingga FAT16 sudah digunakan pada media penyimpanan hardisk dan flashdisk. Meskipun file system ini cocok bagi semua distro linux, FAT16 ini tidak mendukung kontrol aksesdalam partisi dan kompresi sehingga sekecil apapun file maka tetap memakan 32 KB jumlah cluster dari hardisk.</p>
+                            <li><strong>FAT32</strong></li>
+                            <p>FAT12 ini digunakan sejak operation sytem Windows 95 SP2. File system ini merupakan pengembangan dari FAT16 dimana file system ini menggunakan berkas alokasi sebesar 32-bit. System file ini dapat ditampung oleh FAT32 maksimum 232 berkas alokasi (4294967296 buah). Meskipun FAT32 ini memiliki jumlah cluster yang lebih besar dari FAT16, file system ini hanya kompatibel dengan OS tertentu saja.</p>
+                            <li><strong>exFAT</strong></li>
+                            <p>exFAT atau disebut Extended File Allocation Table merupakan sistem berkas proprietary yang kompatible digunakan pada media flash. File system ini telah digunakan pada OS Windows Vista. Performa dari exFAT ini mampu meningkatkan alokasi ruang kosong karena telah mengimplementasikan free space bitmap. exFAT ini mampu menampung alokasi berkas lebih dari 216 (65536 buah) dalam satu directory.</p>
+                        </ol>
+                    </p>
+                    
+                    <p><strong>2. New Technology File System (NTFS)</strong></p>
+                    <p>NTFS ini merupakan file sistem yang memiliki performa yang lebih baik dari versi FAT karena ia mampu mengompresi file, cluster data, enkripsi data dan menawarkan keamanan yang jauh lebih baik. NTFS ini memiliki fitur Alternate data Stream yang dapat menampung lebih dari satu ruang data dalam satu berkas alokasi.
+                    </p>
+                    
+                    <h3><strong>B. Langkah-langkah Partisi Hardisk di Windows 10 </strong></h3>
+                    <ol>
+                        <li>Buka file manager dan klik kanan pada “This PC”, kemudian pilih option manage untuk masuk ke computer management.</a></li>
+                        <figure>
+                            <img src="img/partisi windows//1.png" alt="">
+                        </figure>
+                        <li>Setelah Tampil computer management, kemudian pilih opsi disk management dan klik kanan pada drive yang ingin dipartisi. Setelah itu, klik kanan dan pilih opsi “Shrink Volume”.</li>
+                        <figure>
+                            <img src="img/partisi windows//2.png" alt="">
+                        </figure>
+                        <li>Masukkan berapa size yang ingin kamu buat. Disini saya membuat 10 GB saja atau 20% dari kapasitas total hardisk (50 GB). Kemudian klik “Shrink” untuk melakukan partisi.</li>
+                        <figure>
+                            <img src="img/partisi windows//3.png" alt="">
+                        </figure>
+                        <li>Setelah terbagi, maka akan tampil seperti ini. Tetapi hasilnya masih unallocated.</li>
+                        <figure>
+                            <img src="img/partisi windows//4.png" alt="">
+                        </figure>
+                        <li>Untuk menjadikannya drive maka klik kanan dan pilih opsi “New Simple Volume”.</li>
+                        <figure>
+                            <img src="img/partisi windows//5.png" alt="">
+                        </figure>
+                        <li>Maka akan muncul wizard seperti ini, cukup klik next untuk melanjutkannya.</li>
+                        <figure>
+                            <img src="img/partisi windows//6.png" alt="">
+                        </figure>
+                        <li>Masukkan volume size yang ingin anda buat. Disini saya menyesuaikan dari maximum space-nya. Klik next untuk melanjutkannya.</li>
+                        <figure>
+                            <img src="img/partisi windows//7.png" alt="">
+                        </figure>
+                        <li>Pilih opsi pertama dan pilih label volume space yang kamu inginkan. Disini saya memilih label D. Kemudian klik next untuk melanjutkan.</li>
+                        <figure>
+                            <img src="img/partisi windows/8.png" alt="">
+                        </figure>
+                        <li>Pilih format yang anda inginkan. Disini saya menggunakan format file system NTFS dan pengaturan secara default. Klik next untuk melanjutkan.</li>
+                        <figure>
+                            <img src="img/partisi windows//9.png" alt="">
+                        </figure>
+                        <li>Jikalau sudah sesuai maka muncul laporan setting yang telah kamu buat. Klik finish untuk menyelesaikan.</li>
+                        <figure>
+                            <img src="img/partisi windows//10.png" alt="">
+                        </figure>
+                        <li>Maka Tampilannya menjadi seperti ini.</li>
+                        <figure>
+                            <img src="img/partisi windows//11.png" alt="">
+                        </figure>
+                    </ol>
+                    <h4 class="mt-5">Artikel Terkait</h4>
+                </div>
+                
+                <aside>
+                    <div class="card m-2 border-dark border-3" style="width: 15rem;">
+                        <img src="img/ubuntu-server.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-4">
+                          <h5 class="card-title fw-bold">Partisi Linux dengan Gparted Live</h5>
+                          <p class="update">Updated 2021-02-05</p>
+                          <a href="partisi-linux-dengan-gparted-live.html" class="button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card m-2 border-dark border-3" style="width: 15rem;">
+                        <img src="img/maxresdefault (1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-4">
+                          <h5 class="card-title fw-bold">Cara Install Linux Ubuntu di Virtual Box</h5>
+                          <p class="update">Updated 2021-02-05</p>
+                          <a href="cara-install-linux-di-virtual-box.html" class="button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card m-2 border-dark border-3" style="width: 15rem;">
+                        <img src="img/maxresdefault1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-4">
+                          <h5 class="card-title fw-bold">Cara Install Windows 10 di Virtual Box</h5>
+                          <p class="update">Updated 2021-02-05</p>
+                          <a href="cara-install-windows10-di-virtual-box.html" class="button">Read More</a>
+                        </div>
+                    </div>
+                </aside>
+            </article>
+        </main>
+        
+    </section>
+    <script src="js/scrollup.js"></script>
+</body>
+</html>

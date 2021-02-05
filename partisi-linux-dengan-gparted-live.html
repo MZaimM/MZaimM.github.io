@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/partisi-linux-dengan-gparted-live.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="ul">
+            <li class="li">
+                <a href="index.html" >Home</a>
+            </li>
+            <li class="li">
+                <a href="about.html">About</a>
+            </li>
+            <li class="li">
+                <a href="portofolio.html">Portfolio</a>
+            </li>
+            <li class="li">
+                <a href="blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="material-icons">expand_less</i>
+    </button>
+    <section>
+        <main>
+            <article>
+                <header>
+                    <h2 class="fw-bold ">Partisi Linux dengan <span>Gparted Live</span></h2>
+                </header>
+                <div class="featured-media">
+                    <img src="img/ubuntu-server.jpg" alt="">
+                </div>
+                <div class="content mt-5">
+                    <h3><strong>A. Tabel Partisi di Linux</strong></h3>
+                    <p>Operation System Linux ini memiliki dua jenis partisi tabel 
+                        yang masing-masing jenisnya masih dibagi lagi. 
+                        Partisi tersebut ialah Ext (Ext2,Ext3,Ext4) 
+                        dan ReiserFS.</p>
+                    <p><strong>1. Ext2 (Extended 2nd)</strong></p>
+                    <p>File system jenis Ext2 ini merupakan awal dari semua file system di distro linux dan yang tertua sejak tahun 1993. File siystem ini menyimpan data secara struktural, jadi data disimpan di file, dan file disimpan di dalam dirtectory. Setiap directory bisa mencakup sub directory yang menyimpan file dan data. File system jenis Ext2 ni mampu meyimpan data hingga 4 TB dan sudah kompatibel untuk pengompresian file.</p>
+                    <p><strong>2. Ext3 (Extended 3rd)</strong></p>
+                    <p>File sistem jenis Ext3 ini merupakan pembaruan dari Ext2. pembaruan dari file system ini memiliki peningkatan seperti berikut:
+                        <ol>
+                            <li>Dapat melakukan recovery data yang lebih cepat dibanding Ext2.</li>
+                            <li>Mampu mengintegrasikan data jika terjadi kerusakan (unclean Shut down).</li>
+                            <li>Mempunyai kecepatan penulisan data yang lebih baik daripada Ext2.</li>
+                            <li>Mudah dalam migrasi file system Ext2 ke Ext3.</li>
+                        </ol>
+                    </p>
+                    <p><strong>3. Ext4 (Extended 4th)</strong></p>
+                    <p>File system jenis Ext4 ini merupakan hasil pengembangan dari jenis Ext3 sebelumnya. File system ini umum digunakan oleh pengguna linux biasa atau expert saat ini. Kapasitas data yang dapat ditampung oleh file system ini hingga 16 GB. Kelebihan dari file system ini dilihat dari performanya yang dapat membaca maupun menulis data yang besar.</p>
+                    <p><strong>4. Reiser FS</strong></p>
+                    <p>File system jenis Raiser FS ini memiliki ciri yang mirip dengan Ext3. Raiser FS ini memiliki performa yang unggul dalam kinerjanya. Pemanfaatan ruang disk yang cukup baik sehingga lebih efisien dalam menghemat space hardisk yang terbuang sia-sia.</p>
+                    <h3><strong>B. Lagkah-Langkah Partisi Hardisk Menggunakan Gparted Live :</strong></h3>
+                    <ol>
+                        <li>Download terlebih dahulu iso dari Gparted Live, jika belum mengunduhnya bisa klik <a href="https://gparted.org/download.php">di sini.</a></li>
+                        <figure>
+                            <img src="img/partisi linux/1.png" alt="">
+                        </figure>
+                        <li>Setelah download selesai, buka virtual box anda.</li>
+                        <figure>
+                            <img src="img/partisi linux/2.png" alt="">
+                        </figure>
+                        <li>Masuk kebagian Setting –> Storage, kemudian pilih dimana iso gparted live anda yang telah di download.</li>
+                        <figure>
+                            <img src="img/partisi linux/3.png" alt="">
+                        </figure>
+                        <li>Jangan lupa cheklist Live CD/DVD, kemudian klik OK.</li>
+                        <figure>
+                            <img src="img/partisi linux/4.png" alt="">
+                        </figure>
+                        <li>Klik Start untuk memulai menjalankan</li>
+                        <figure>
+                            <img src="img/partisi linux/5.png" alt="">
+                        </figure>
+                        <li>Setelah masuk, pilih pengaturan default kemudian tekan Enter saat layar booting GParted Live ditampilkan.</li>
+                        <figure>
+                            <img src="img/partisi linux/6.png" alt="">
+                        </figure>
+                        <li>Jika ingin menggunakan standart US keymap, maka tekan Enter.</li>
+                        <figure>
+                            <img src="img/partisi linux/7.png" alt="">
+                        </figure>
+                        <li>Pilih nomor bahasa yang ingin anda pakai, kemudian tekan Enter.</li>
+                        <figure>
+                            <img src="img/partisi linux/8.png" alt="">
+                        </figure>
+                        <li>Jika ingin memulai Gparted dengan pengaturan default, ketik 0 kemudian Enter.</li>
+                        <figure>
+                            <img src="img/partisi linux/9.png" alt="">
+                        </figure>
+                        <li>Tunggu beberapa saat, otomatis langsung membuka Gparted live nya.</li>
+                        <figure>
+                            <img src="img/partisi linux/10.png" alt="">
+                        </figure>
+                        <li>Untuk memulai partisi klik kanan–>Resize/Move.</li>
+                        <figure>
+                            <img src="img/partisi linux/11.png" alt="">
+                        </figure>
+                        <li>Atur size yang ingin dipartisi. Disini saya atur untuk drive pertama 80%(12 GB dari 15 GB) dan drive kedua 20% (3 GB dari 15 GB). Kemudian klik Resize/Move.</li>
+                        <figure>
+                            <img src="img/partisi linux/12.png" alt="">
+                        </figure>
+                        <li>Maka Tampilan awalnya masih unallocated. Klik kanan–>new untuk mengatur drive tersebut.</li>
+                        <figure>
+                            <img src="img/partisi linux/13.png" alt="">
+                        </figure>
+                        <li>Jika pengaturannya sudah sesuai, beri label sebagai penanda drive. Disini saya beri nama “Drive D”. Jika selesai, maka klik Add.</li>
+                        <figure>
+                            <img src="img/partisi linux/14.png" alt="">
+                        </figure>
+                        <li>Jika sudah selesai proses membuat partisi yang baru, maka klik close untuk menutup.</li>
+                        <figure>
+                            <img src="img/partisi linux/15.png" alt="">
+                        </figure>
+                        <li>Klik Exit dan pilih Shut Down.</li>
+                        <figure>
+                            <img src="img/partisi linux/16.png" alt="">
+                        </figure>
+                        <li>Remove Gparted live dari storage, kemudian jalankan Linux Ubuntu OS nya.</li>
+                        <figure>
+                            <img src="img/partisi linux/17.png" alt="">
+                        </figure>
+                        <li>Masuk ke File –> Other locations, dan lihat hasil partisi menggunakan Gparted Live telah berhasil.</li>
+                        <figure>
+                            <img src="img/partisi linux/18.png" alt="">
+                        </figure>
+                    </ol>
+                    <h4 class="mt-5">Artikel Terkait</h4>
+                </div>
+                
+                <aside>
+                    <div class="card m-2 border-dark border-3" style="width: 15rem;">
+                        <img src="img/windows10.png" class="card-img-top" alt="...">
+                        <div class="card-body p-4">
+                          <h5 class="card-title fw-bold">Cara Mempartisi Windows 10</h5>
+                          <p class="update">Updated 2021-02-05</p>
+                          <a href="cara-mempartisi-windows10.html" class="button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card m-2 border-dark border-3" style="width: 15rem;">
+                        <img src="img/maxresdefault (1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-4">
+                          <h5 class="card-title fw-bold">Cara Install Linux Ubuntu di Virtual Box</h5>
+                          <p class="update">Updated 2021-02-05</p>
+                          <a href="cara-install-linux-di-virtual-box.html" class="button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card m-2 border-dark border-3" style="width: 15rem;">
+                        <img src="img/maxresdefault1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-4">
+                          <h5 class="card-title fw-bold">Cara Install Windows 10 di Virtual Box</h5>
+                          <p class="update">Updated 2021-02-05</p>
+                          <a href="cara-install-windows10-di-virtual-box.html" class="button">Read More</a>
+                        </div>
+                    </div>
+                </aside>
+            </article>
+        </main>
+        
+    </section>
+    <script src="js/scrollup.js"></script>
+</body>
+</html>
