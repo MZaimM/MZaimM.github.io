@@ -164,7 +164,7 @@ aside img{
   border-radius: 150px;
   border: 10px solid rgba(126, 42, 219, 0.7);
   box-sizing: border-box;
-  margin-right: 5%;
+  margin-right: 20%;
   margin-top: 10px;
 }
 #motion-3{
@@ -176,17 +176,17 @@ aside img{
 @keyframes motion-3 {
   0% {
     
-    margin-right:5%;
+    margin-right:20%;
 
   }
   50% {
     
-    margin-right:-5%;
+    margin-right:10%;
 
   }
   100% {
     
-    margin-right:5%;
+    margin-right:20%;
 
   }
 }
