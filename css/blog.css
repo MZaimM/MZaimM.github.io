@@ -58,7 +58,10 @@ nav ul li:hover{
 #check{
     display: none;
 }
-
+.border-bottom{
+  border-bottom: 2px solid;
+  border-image: radial-gradient(rgba(145, 41, 228, 1),rgba(145, 41, 228, 0.3), rgba(145, 41, 228, 0)) 1;
+}
 span{
     color: #7E2ADB;
 }
